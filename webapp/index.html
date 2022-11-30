@@ -31,14 +31,15 @@
                 <a class="nav-link" href="#">시계열평균</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">인공지능예측</a>
+                <a class="nav-link" href="#">아키텍쳐</a>
+                <!-- <a class="nav-link disabled">아키텍쳐</a> -->
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">이상훈팀장</a></li>
+                  <li><a class="dropdown-item" href="#">신승근</a></li>
+                  <li><a class="dropdown-item" href="#">조경섭</a></li>
                 </ul>
               </li>
             </ul>
@@ -47,27 +48,39 @@
       </nav>
       <!-- 콘텐츠 시작-->
       <main class="flex-shrink-0">
-        <div class="container">
+        <div class="container" style="text-align: center">
           <h1 class="mt-5">Bus(Best Useble Service) Contents</h1>
           <p>
-            <label for="input">검색할 버스입력</label>
+            <form class="row g-3">
+              <label for="inputAddress" class="form-label"><h3>검색할 버스의 번호를 입력해주세요</h3></label>
+              <div class="col-10">
+                <input type="text" class="form-control" id="inputAddress" placeholder="G1300">
+              </div>
+              <div class="col-2">
+                <button type="submit" class="btn btn-primary">검색하기</button>
+              </div>
+            </form>
+
+            <!-- <label for="input">검색할 버스입력</label>
             <input type="text" id="input" placeholder="G1300?">
-            <button type="submit">검색시작</button>
+            <button type="submit">검색시작</button> -->
           </p>
+          <br>
 
           <div>
             <table class="table">
-              <caption>
+              <caption style="text-align: center">
+                <br>
                 덕정 차고지에서 잠실까지 가는 광역버스 G1300번의 출발시간입니다.
               </caption>
-              <thead>
-                <tr>
+              <thead style="text-align: center">
+                <tr class="table-info">
                   <th>덕정출발</th>
                   <th>잠실출발  </th>
                   
                 </tr>
               </thead>
-              <tbody>
+              <tbody style="text-align: center">
                 <tr>
                   <td>Time1</td>
                   <td>Time01</td>
@@ -96,9 +109,10 @@
         </div>
         
       </main>
+      <br>
       <!-- 푸터시작 -->
       <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
+        <div class="container" style="text-align: center" >
           <span>Best Useble Service 이상훈팀장, 신승근, 조경섭 화이팅</span>
         </div>
       </footer>
